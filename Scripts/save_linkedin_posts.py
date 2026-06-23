@@ -3,6 +3,7 @@
 Save manually copied LinkedIn posts as grouped markdown files by author.
 
 Examples:
+  python Scripts/save_linkedin_posts.py --input-file ross-simmonds-linkedin.txt
   python Scripts/save_linkedin_posts.py --author "Ross Simmonds" --info-file ross-info.txt --post-file post-1.txt --post-file post-2.txt
   python Scripts/save_linkedin_posts.py --author "Ross Simmonds" --interactive
 
@@ -23,6 +24,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "Research" / "Linkedin_Posts"
 POSTS_MARKER = "<!-- posts:start -->"
+POST_SPLIT_PATTERN = re.compile(r"^---\s*post\s*---\s*$", flags=re.IGNORECASE | re.MULTILINE)
 
 
 @dataclass(frozen=True)
@@ -59,6 +61,70 @@ def clean_text(text: str) -> str:
 
 def read_text_file(path: str) -> str:
     return Path(path).read_text(encoding="utf-8").strip()
+
+
+def parse_author_input_file(path: str) -> tuple[str, str, list[LinkedInPost]]:
+    """
+    Parse one manually filled input file per author.
+
+    Expected format:
+      Author: Ross Simmonds
+
+      Info:
+      Short author information here.
+
+      --- post ---
+      Date: 2026-06-01
+      URL: https://www.linkedin.com/posts/...
+      Note: Optional note
+
+      Post text here.
+    """
+    text = read_text_file(path)
+    author_match = re.search(r"^Author:\s*(.+)$", text, flags=re.IGNORECASE | re.MULTILINE)
+    if not author_match:
+        raise ValueError(f"{path} must include an 'Author:' line.")
+
+    author = author_match.group(1).strip()
+    info_match = re.search(
+        r"^Info:\s*\n(?P<info>.*?)(?=^---\s*post\s*---\s*$|\Z)",
+        text,
+        flags=re.IGNORECASE | re.MULTILINE | re.DOTALL,
+    )
+    general_info = clean_text(info_match.group("info")) if info_match else ""
+
+    post_blocks = [block.strip() for block in POST_SPLIT_PATTERN.split(text)[1:]]
+    posts: list[LinkedInPost] = []
+    for block in post_blocks:
+        if not block:
+            continue
+
+        metadata: dict[str, str] = {}
+        body_lines: list[str] = []
+        reading_metadata = True
+
+        for line in block.splitlines():
+            field_match = re.match(r"^(Date|URL|Note):\s*(.*)$", line, flags=re.IGNORECASE)
+            if reading_metadata and field_match:
+                metadata[field_match.group(1).lower()] = field_match.group(2).strip()
+                continue
+            if reading_metadata and not line.strip():
+                continue
+            reading_metadata = False
+            body_lines.append(line)
+
+        content = clean_text("\n".join(body_lines))
+        if content:
+            posts.append(
+                LinkedInPost(
+                    content=content,
+                    source_url=metadata.get("url", ""),
+                    post_date=metadata.get("date", ""),
+                    note=metadata.get("note", ""),
+                )
+            )
+
+    return author, general_info, posts
 
 
 def read_multiline(prompt: str) -> str:
@@ -169,7 +235,11 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Save manually copied LinkedIn posts into one grouped markdown file per author."
     )
-    parser.add_argument("--author", required=True, help="LinkedIn post author name.")
+    parser.add_argument(
+        "--input-file",
+        help="One manually filled author file containing author info and 3-4 LinkedIn posts.",
+    )
+    parser.add_argument("--author", help="LinkedIn post author name.")
     parser.add_argument("--info", default="", help="General author info text.")
     parser.add_argument("--info-file", help="Text file containing general author info.")
     parser.add_argument("--post", action="append", help="Copied LinkedIn post text. Repeat for multiple posts.")
@@ -227,14 +297,26 @@ def collect_posts(args: argparse.Namespace) -> tuple[str, list[LinkedInPost]]:
 
 def main() -> int:
     args = parse_args()
-    general_info, posts = collect_posts(args)
+
+    try:
+        if args.input_file:
+            author, general_info, posts = parse_author_input_file(args.input_file)
+        else:
+            if not args.author:
+                print("Input error: provide --author or use --input-file.", file=sys.stderr)
+                return 2
+            author = args.author.strip()
+            general_info, posts = collect_posts(args)
+    except ValueError as exc:
+        print(f"Input error: {exc}", file=sys.stderr)
+        return 2
 
     if not posts:
-        print("Input error: provide at least one --post, --post-file, or use --interactive.", file=sys.stderr)
+        print("Input error: provide at least one post in --input-file, --post, --post-file, or --interactive.", file=sys.stderr)
         return 2
 
     output_path = save_author_posts(
-        author=args.author.strip(),
+        author=author,
         general_info=general_info,
         posts=posts,
         output_root=Path(args.output_root),
