@@ -48,7 +48,7 @@ This document contains the primary experts selected for research on **YouTube Co
 + **LinkedIn:** [https://www.linkedin.com/in/tylerlessard](https://www.linkedin.com/in/tylerlessard)
 ***
 ## 5. **Adam Robinson**
-> founder and CEO of Retention.com, known for building RB2B to $5M ARR through founder-led organic content and building in public.
+> Founder and CEO of Retention.com, known for building RB2B to $5M ARR through founder-led organic content and building in public.
     + **Role:** Founder & CEO, RB2B
 + **Website:**
     - [https://www.rb2b.com](https://www.rb2b.com) [Company]
@@ -77,7 +77,7 @@ This document contains the primary experts selected for research on **YouTube Co
 ## 8. **Ross Simmonds**
 > Founder & CEO, Foundation
 >
->Famous for the philosophy: "Create once. Distribute forever." and expert in content distribution, AI marketing, Reddit marketing, growth, and SaaS 
+> Famous for the philosophy: "Create once. Distribute forever." and expert in content distribution, AI marketing, Reddit marketing, growth, and SaaS 
 + **Website:**
     - [https://foundationinc.co](https://foundationinc.co) [Company]
 + **YouTube:** [https://www.youtube.com/@TheRossSimmonds](https://www.youtube.com/@RossSimmondsTV)
