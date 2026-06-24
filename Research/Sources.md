@@ -1,10 +1,11 @@
 # Expert Sources
 
 This document contains the primary experts selected for research on **YouTube Content Strategy for B2B SaaS**.
+
 <details>
 <summary> <b> 📑Table of Contents</b> </summary>
 
- * [TK Kader](#TK-Kader)
+ * [TK Kader](#1.-TK-Kader)
  * [Samu Kovacs](#Samu-Kovacs)
  * [Sam Dunning](#Sam-Dunning)
  * [Tyler Lessard](#Tyler-Lessard)
@@ -14,6 +15,8 @@ This document contains the primary experts selected for research on **YouTube Co
  * [Ross Simmonds](#oss-Simmonds)
  * [Phil Nottingham](#Phil-Nottingham)
  * [Tom Whatley](#Tom-Whatley)
+
+   
 </details>
 
 ---
