@@ -116,7 +116,7 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
                └── Key Insight.md
          └── Sources.md
        
-7. Expert Identification & Source Collection
+6. Expert Identification & Source Collection
 + Selected & documented leading B2B SaaS marketers, founders, and content creators.
 + Their LinkedIn posts, YouTube videos, podcasts, and articles were collected for analysis.
 7. Automated YouTube Transcript Collection
