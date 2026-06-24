@@ -41,7 +41,7 @@ This document contains the primary experts selected for research on **YouTube Co
     + **Website:**
         - [https://www.rb2b.com](https://www.rb2b.com) [Company]
         - [https://retention.com/](https://retention.com/) [Company]
-    + **YouTube** [https://www.youtube.com/channel/AdamRobison](https://www.youtube.com/channel/UCSHn0Px37BjzMqnZBmVWwcQ)
+    + **YouTube:** [https://www.youtube.com/channel/AdamRobison](https://www.youtube.com/channel/UCSHn0Px37BjzMqnZBmVWwcQ)
     + **LinkedIn:** [https://www.linkedin.com/in/retentionadam/](https://www.linkedin.com/in/retentionadam/)
  
 6. **Nathan Latka**
@@ -69,25 +69,21 @@ This document contains the primary experts selected for research on **YouTube Co
     
     >Famous for the philosophy: "Create once. Distribute forever."
     
-    > worked in Distribution, Artificial Intelligence, Reddit, Growth & SaaS 
+    > Expert in content distribution, AI marketing, Reddit marketing, growth, and SaaS 
     + **Website:**
         - [https://foundationinc.co](https://foundationinc.co) [Company]
     + **YouTube:** [https://www.youtube.com/@TheRossSimmonds](https://www.youtube.com/@RossSimmondsTV)
     + **LinkedIn:** [https://www.linkedin.com/in/rosssimmonds](https://www.linkedin.com/in/rosssimmonds/)
 
-
 9. **Phil Nottingham**
-    > Founder af Organic Video, YouTube Strategist, video-driven demand generation & SEO Consultant
+    > Founder of Organic Video, YouTube Strategist, video-driven demand generation & SEO Consultant
     + **Website:** [https://organicvideo.com](https://organicvideo.com/about/)
-    + **LinkedIn:** [https://www.linkedin.com/in/philnottingham
+    + **LinkedIn:** [https://www.linkedin.com/in/philnottingham](https://www.linkedin.com/in/philnottingham)
       
-10 **Tom Whatley**
-    + **Role:** Founder & CEO, Grizzle
+10. **Tom Whatley**
+    > Founder & CEO, Grizzle
 
-**Website:** [https://grizzle.io](https://grizzle.io)
-
-**LinkedIn:** [https://www.linkedin.com/in/tomwhatley](https://www.linkedin.com/in/tomwhatley)
-
-> Specialist in SEO, content strategy, and organic growth for technology companies.
----
-
+    > Specialist in SEO, content strategy, and organic growth for technology companies.
+    + **Website:** [https://grizzle.io](https://grizzle.io) [Company]
+    + **YouTube:** [https://www.youtube.com/channel/@TomWhatley](https://www.youtube.com/channel/UCJ0zIQo3KxV1L6Ic8LIDhQA)
+    + **LinkedIn:** [https://www.linkedin.com/in/tomwhatley](https://www.linkedin.com/in/thetomwhatley/)
