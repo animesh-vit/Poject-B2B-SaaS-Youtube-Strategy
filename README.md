@@ -72,3 +72,84 @@ This combination provides both content expertise and SaaS business context, maki
 
 Together, these experts represent complementary perspectives on YouTube content strategy, including video production, SEO, distribution, audience growth, demand generation, founder branding, and SaaS marketing.
 
+---
+
+## Tools Used 
+1. Cursor IDE
+2. Extensions installed 
+     + OpenAI Codex Agent
+4. GitHub
+5. For Programming & Automation
+     + Python
+     + youtube-transcript-api
+     + yt-dlp
+7. For Research 
+    + LinkedIn
+    + YouTube
+    + Manual Research
+
+## Steps
+
+**1. Topic selection**
++ ***YouTube Content Strategy for B2B SaaS***
+    + Reason for selection:
+        + Strong overlap between content marketing and SaaS growth.
+        + Availability of YouTube, LinkedIn, and podcast content for research.
+        + It provides a blueprint to dominate the world's second-largest search engine by turning educational video content into high-intent inbound sales.
+          
+2. Created GitHub Repository
+    > ***Repository Name:*** Project-B2B-SaaS-Youtube-Strategy
+
+3.Local Development Setup in Cursor IDE
++ Cloned the repository locally and opened it in Cursor IDE.
+     > git clone https://github.com/animesh-vit/Poject-B2B-SaaS-Youtube-Strategy
+     > <br> (In Terminal)
+      
+5. Used Codex within Cursor IDE to  generate the initial project structure according to the assignment requirements.
+6. Expert Identification
+7. Automated YouTube Transcript Collection
+  + Created a lightweight Python script to automatically collect YouTube transcripts using Codex.
+    > File: get_transcripts.py
+      + Accepts either a YouTube URL or Video ID
+      + Downloads transcripts using youtube-transcript-api
+      + Removes timestamps and metadata
+      + Cleans and formats transcript text
+      + Saves transcripts as structured files
+      + Stores output within: [`Research/YouTube_Transcripts/`](Research/YouTube_Transcripts/)
+    
+8.LinkedIn Content Collection
++ Manually collected relevant LinkedIn posts from selected experts.
++ All posts were organized into a single raw-text file grouped by author in:
+    + [`Research/Linkedin_Posts/raw-text-posts`](Research/Linkedin_Posts/raw-text-posts)
+  > Format
+      >  <br> Source: Author Name
+       <br> ## Post 1
+  >         <br> ...
+  >          <br> ## Post 2
+  >          <br>  ...
+  >           <br> ## Post 3
+  >           <br>  ...       
+9. Used Codex within Cursor IDE to analyze collected LinkedIn posts and save them in  [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/).
+10. Based on the collected research material, Codex was used to generate structured insights and strategic takeaways. [`Key Insight.md`](Research/Others/Key%20Insight.md)
+
+## Issue
++ Encountered Git identity configuration error during commit.
+    + Resolved using:
+      > git config --global user.email "your-email@example.com"
+      > git config --global user.name "your-github-username"
+
+---
+
+## Outcomes
++ Identified and analyzed leading ***B2B SaaS YouTube and content marketing experts***.
++ Built a structured research repository in GitHub.
++ Automated YouTube transcript collection using Python and youtube-transcript-api.
++ Collected and organized LinkedIn posts and YouTube content for analysis.
++ Generated AI-assisted summaries of expert content using Codex in Cursor IDE.
++ Extracted recurring patterns, frameworks, and best practices across multiple experts.
++ Documented actionable insights on content creation, distribution, audience growth, and demand generation.
++ Demonstrated practical use of AI-assisted research and automation workflows.
+
+
+
+
