@@ -5,11 +5,12 @@
 <summary> <b> 📑Table of Contents</b> </summary>
 
 * [Introduction](#introduction)
-* [Tools Installed](#tools-installed)
-* [Setup Steps](#setup-steps)
+* [Research Goal](#research-goal)
+* [Experts Selected](#experts-selected)
+* [Repository Structure](#repository-structure)
+* [Methodology](#methodology)
 * [Issues Encountered](#issues-encountered)
-* [Outcome](#outcome)
-* [Useful Links](#useful-links)
+* [Outcomes](#outcomes)
   
 </details>
 
@@ -27,21 +28,12 @@ The **objective** is to identify common patterns, frameworks, and best practices
 
 ---
 ## Selection Criteria
-> Experts were selected based on:
->
-> * Active involvement in B2B SaaS growth
-> * Proven real-world results
-> * Strong presence on LinkedIn, YouTube, podcasts, or newsletters
-> * Practical experience rather than purely theoretical advice
+ * Experts were selected based on:
+ * Active involvement in B2B SaaS growth
+ * Proven real-world results
+ * Strong presence on LinkedIn, YouTube, podcasts, or newsletters
+ * Practical experience rather than purely theoretical advice
 ---
-
-## Repository Structure 
-The **YouTube content strategy for B2B SaaS** research set is organized under [`Research/`](Research/):
-
-- [`Research/Sources.md`](Research/Sources.md): the source index with 10 selected experts, profile links, channel links, and short annotations.
-- [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/): recent LinkedIn posts collections, organized by expert.
-- [`Research/YouTube_Transcripts/`](Research/YouTube_Transcripts/): 15 YouTube transcript files, organized by creator or channel.
-- [`Research/Others/`](Research/Others/): supporting analysis, including [`Key Insight.md`](Research/Others/Key%20Insight.md), which summarizes themes across the collected transcripts.
 
 ## Experts Selected
 
@@ -72,6 +64,15 @@ This combination provides both content expertise and SaaS business context, maki
 
 Together, these experts represent complementary perspectives on YouTube content strategy, including video production, SEO, distribution, audience growth, demand generation, founder branding, and SaaS marketing.
 
+---
+## Repository Structure 
+The **YouTube content strategy for B2B SaaS** research set is organized under [`Research/`](Research/):
+
+- [`Research/Sources.md`](Research/Sources.md): the source index with 10 selected experts, profile links, channel links, and short annotations.
+- [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/): recent LinkedIn posts collections, organized by expert.
+- [`Research/YouTube_Transcripts/`](Research/YouTube_Transcripts/): 15 YouTube transcript files, organized by creator or channel.
+- [`Research/Others/`](Research/Others/): supporting analysis, including [`Key Insight.md`](Research/Others/Key%20Insight.md), which summarizes themes across the collected transcripts.
+   
 ---
 
 ## Tools Used 
@@ -144,7 +145,7 @@ Together, these experts represent complementary perspectives on YouTube content 
 9. Used Codex within Cursor IDE to analyze collected LinkedIn posts and save them in  [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/).
 10. Based on the collected research material, Codex was used to generate structured insights and strategic takeaways. [`Key Insight.md`](Research/Others/Key%20Insight.md)
 
-## Issue
+## Issues Encountered
 + Encountered Git identity configuration error during commit.
     + Resolved using:
       > git config --global user.email "your-email@example.com"
