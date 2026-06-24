@@ -1,7 +1,6 @@
 ### Source: Tyler Lessard
 > CMO at TechnologyAdvice and Chief Marketing Insider
 
-
 ## Post 1
 
 **Date:** 4 months ago

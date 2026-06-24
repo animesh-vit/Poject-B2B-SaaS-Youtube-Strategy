@@ -1,5 +1,5 @@
 ### Source: Phil Nottingham
-
+> Founder @ Organic Video. Strategist. Producer. Speaker.
 ## Post 1
 
 **Date:** 5mo ago 
