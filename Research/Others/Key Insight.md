@@ -112,6 +112,5 @@ The consensus across the transcripts:
 7. **Viral product loops**  
    AI products can create faster "aha moments," which users then share organically.
 
-## Through-Line
 
 In a world filled with AI-generated noise, the only durable moat is **genuine human expertise**, consistently distributed, with pricing that filters for serious buyers.
