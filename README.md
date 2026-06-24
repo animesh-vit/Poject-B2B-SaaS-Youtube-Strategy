@@ -98,15 +98,15 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
         + Availability of YouTube, LinkedIn, and podcast content for research.
         + It provides a blueprint to dominate the world's second-largest search engine by turning educational video content into high-intent inbound sales.
           
-2. Created GitHub Repository
-    > ***Repository Name:*** Project-B2B-SaaS-Youtube-Strategy
+**2. Created GitHub Repository**
+  > ***Repository Name:*** Project-B2B-SaaS-Youtube-Strategy
 
-3.Local Development Setup in Cursor IDE
+**3.Local Development Setup in Cursor IDE**
 + Cloned the repository locally and opened it in Cursor IDE.
      > git clone https://github.com/animesh-vit/Poject-B2B-SaaS-Youtube-Strategy
      > <br> (In Terminal)
       
-5. Used Codex within Cursor IDE to  generate the initial project structure according to the assignment requirements.
+**4. Used Codex within Cursor IDE to  generate the initial project structure according to the assignment requirements.**
 + Repository Structure <br> 
 
          Research/
@@ -116,10 +116,10 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
                └── Key Insight.md
          └── Sources.md
        
-6. Expert Identification & Source Collection
+**5. Expert Identification & Source Collection**
 + Selected & documented leading B2B SaaS marketers, founders, and content creators.
 + Their LinkedIn posts, YouTube videos, podcasts, and articles were collected for analysis.
-7. Automated YouTube Transcript Collection
+**6. Automated YouTube Transcript Collection**
   + Created a lightweight Python script to automatically collect YouTube transcripts using Codex.
     > File: fetch_youtube_transcripts.py <br>
     > <b> [Location:Research/Scripts/]
@@ -130,7 +130,7 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
       + Saves transcripts as structured files
       + Stores output within: [`Research/YouTube_Transcripts/`](Research/YouTube_Transcripts/)
     
-8.LinkedIn Content Collection
+**7.LinkedIn Content Collection****
 + Manually collected relevant LinkedIn posts from selected experts.
 + All posts were organized into a single raw-text file grouped by author in:
     + [`Research/Linkedin_Posts/raw-text-posts`](Research/Linkedin_Posts/raw-text-posts)
@@ -142,8 +142,11 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
       >          <br>  ...
       >           <br> ## Post 3
       >           <br>  ...       
-9. Used Codex within Cursor IDE to analyze collected LinkedIn posts and save them in  [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/).
-10. Based on the collected research material, Codex was used to generate structured insights and strategic takeaways. [`Key Insight.md`](Research/Others/Key%20Insight.md)
+**8. Used Codex within Cursor IDE to analyze collected LinkedIn posts and save them in**  [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/).
+**9. Based on the collected research material, Codex was used to generate structured insights and strategic takeaways.** [`Key Insight.md`](Research/Others/Key%20Insight.md)
+**10. Updated the README.md file**
+
+---
 
 ## Issues Encountered
 + Encountered Git identity configuration error during commit.
