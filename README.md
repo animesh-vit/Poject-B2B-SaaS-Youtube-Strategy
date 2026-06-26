@@ -160,9 +160,10 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
 ---
 
 ## Outcomes
+
 + Identified and analyzed leading ***B2B SaaS YouTube and content marketing experts***.
 + Built a structured research repository in GitHub.
-+ Automated YouTube transcript collection using Python and youtube-transcript-api.
++ ***Automated YouTube transcript*** collection using Python and youtube-transcript-api.
 + Collected and organized LinkedIn posts and YouTube content for analysis.
 + Generated AI-assisted summaries of expert content using Codex in Cursor IDE.
 + Extracted recurring patterns, frameworks, and best practices across multiple experts.
