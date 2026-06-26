@@ -141,9 +141,12 @@ The **YouTube content strategy for B2B SaaS** research set is organized under [`
       >          <br> ## Post 2
       >          <br>  ...
       >           <br> ## Post 3
-      >           <br>  ...       
+      >           <br>  ...
+        
 **8. Used Codex within Cursor IDE to analyze collected LinkedIn posts and save them in**  [`Research/Linkedin_Posts/`](Research/Linkedin_Posts/).
+
 **9. Based on the collected research material, Codex was used to generate structured insights and strategic takeaways.** [`Key Insight.md`](Research/Others/Key%20Insight.md)
+
 **10. Updated the README.md file**
 
 ---
